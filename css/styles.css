@@ -46,7 +46,6 @@ body main{
     height: 100%;
     margin: 50px 0px 10px 200px;
     width: 80%;
-    border-bottom: 1px dotted gray;
     border-width: thin;
     
 }
@@ -55,9 +54,12 @@ body main article{
     float: left;
     width: 50%;
     height: 50%;
-    padding-bottom: 45px;
-    margin-bottom: 25px;
+    margin-bottom: 95px;
     
+}
+
+body main article.dotted-border{
+    border-bottom: 1px dotted gray;
 }
 
 body main article h1{
@@ -79,17 +81,21 @@ body main article p{
     padding-right: 20px;
     margin-right: 40px;
 
-   
+
 }
 
-aside{
+body main article section img{
+    float: left;
+}
 
+#portfolio-article{
+    width: 100%;
+    padding-bottom: 50px;
     
-    width: 20%;
-    margin-bottom: 100px;
-    padding-right: 0px;
-    content: url('/img/mika.jpg');
-    
+}
+
+#portfolio-image-one{
+    padding-right: 20px;
 }
 
 body footer{
@@ -109,6 +115,7 @@ body footer{
 
 
 }
+
 #foot img{
     width: 30px;
     height: 30px;

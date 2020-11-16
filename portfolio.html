@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>My portfolios</title>
-        <link rel = "stylesheet" href = "css/styles.css">
+        <link rel = "stylesheet" href = "./css/styles.css">
     
     </head>
 
@@ -13,7 +13,7 @@
                     <li><a href = "index.html">michael</a></li>
                     <li><a href = "portfolio.html">portfolio</a></li>
                     <li><a href = "resume.html">resume</a></li>
-                    <li><a href = "cv_download.html">resume download</a></li>
+                    <li><a href = "cv_download.html">resume-download</a></li>
                 </ul>
             </nav>
 
@@ -21,16 +21,24 @@
         
         <main>
             
-            <article>
-                <h1>portfolio</h1>
-                <p>portfolio one</p>
-                <p>portfolio two</p>
+            <article class = "dotted-border" id = "portfolio-article">
+                <h1>Portfolio</h1><br>
+
+                <section>
+                    <a href="#"><img src="img/ct.jpg" width="40%" alt="my first portfolio" id = "portfolio-image-one"></a>
+                </section>
+                    
+                <section>
+                    <a href="#"><img src="img/jmp.jpeg" width="40%" alt="my second portfolio" id = "portfolio-image-two"></a>
+                </section>
+
+                
             </article>
 
         </main>
         <footer>
-            <p>michaelseifuaraya@gmail.com</p>
-            <p>github, linkdin</p>
+            <p id = "foot">michaelseifuaraya@gmail.com <br> <img src="img/github.png"> <img src="img/linkdin.png"></p>
+
         </footer>
     </body>
 
