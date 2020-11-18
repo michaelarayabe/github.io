@@ -10,10 +10,10 @@
         <header>
             <nav>
                 <ul>
-                    <li><a href = "index.html">michael</a></li>
-                    <li><a href = "portfolio.html">portfolio</a></li>
-                    <li><a href = "resume.html">resume</a></li>
-                    <li><a href = "cv_download.html">resume download</a></li>
+                    <li><a href = "index.html">Michael</a></li>
+                    <li><a href = "portfolio.html">Portfolio</a></li>
+                    <li><a href = "resume.html">Resume</a></li>
+                    <li><a href = "contact.html">Contact</a></li>
                 </ul>
             </nav>
 
@@ -21,12 +21,30 @@
         
         <main>
             
-            <p>Here we will have my cv to download</p>
+            <article class = "dotted-border">
+                <h1>Contact Me</h1><br><br>
+                <form action="mailto:michaelseifuaraya[at]gmail.com">
+                    <label for = "yourname">Name: </label>
+                    <input type = "text" name= "yourname">
+                    <br><br>
+
+                    <label for = "youremail">Email<sup>*</sup>: </label>
+                    <input type = "email"  name= "youremail" required>
+                    <br><br>
+
+                    <label for = "message">Message<sup>*</sup>:  </label><br><br>
+                     <textarea name="message" placeholder="uw bericht" rows = "10" cols="30" required></textarea> <br>
+                    <input type="submit">
+                    <br>
+                    <p>* required</p>
+
+                </form>
+                    
+            </article>
 
         </main>
         <footer>
-            <p>michaelseifuaraya@gmail.com</p>
-            <p>github, linkdin</p>
+            <p id = "foot">michaelseifuaraya@gmail.com <br> <a href = "https://github.com/michaelarayabe"><img src="img/github.png"> </a><a href = "https://www.linkedin.com/in/michael-araya-9309a415"><img src="img/linkdin.png"></a></p>
         </footer>
     </body>
 

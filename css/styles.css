@@ -6,39 +6,36 @@ html,body{
     background-color: linen;
 }
 
-body header{
-    overflow: hidden;
-    border-bottom: 0.01em solid gray;
+body a{
+    text-decoration: none;
 }
 
-@media screen and (max-width: 500px) {
-    ul li a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    ul {
-      float: none;
-    }
-  }
-
-body nav{
-    margin-right: 35px;
-    padding-right: 20px;
+body p{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6em;
+    text-justify: auto;
     
 }
+
+body header{
+    overflow: hidden;
+    width: 100%;
+    border-bottom: 0.01em solid gray;
+    border-width: 100%;
+}
+
+
 body ul{
-    float: right;
-    margin-right: 15em;
-    padding-right: 100px;
+
+    text-align: center;
     list-style-type: none;
     word-spacing: 18px;
     
 }
 
 body ul li{
-    padding-right: 10px;
-    display: inline;
+    
+    display: inline-block;
     
     
     
@@ -144,3 +141,77 @@ body footer{
     height: 100%;
     text-align: center;
 }
+
+  
+
+
+  #cv-intro-section{
+      
+      width: 100%;
+      padding-top: 1.3em;
+      
+  }
+
+  #cv-intro-first-div{
+      width: 40%;
+      float: left;
+      
+  }
+
+  #cv-intro-second-div{
+      float: right;
+      
+      
+}
+
+  #cv-section-h3{
+      line-height: 0.01em;
+      text-align: left;
+  }
+
+  #cv-profiel{
+      clear: both;
+      width: 100%;
+      padding-top: 3em;
+      border-top: 0.1em solid gray;
+  }
+
+  .cv-section-h2{
+      float: left;
+      width: 20%;
+
+  }
+
+  .cv-section-p{
+      float: right;
+      width: 80%;
+
+  }
+
+  #cv-opleiding{
+      clear: both;
+      
+      padding-top: 3em;
+  }
+
+  #cv-skills{
+      clear: both;
+      padding-top: 3em;
+  }
+
+  .styled-unordered-lists {
+      display: flex;
+      word-spacing: 0.3em;
+      font-style: italic;
+      
+  }
+  .styled-unordered-lists-skills{
+      display: flex;
+      word-spacing: 0.3em;
+      
+  }
+  
+
+  
+
+  
