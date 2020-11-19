@@ -1,3 +1,5 @@
+/* General style*/
+
 html,body{
     position: relative;
     min-height: 100%;
@@ -6,16 +8,18 @@ html,body{
     background-color: linen;
 }
 
-body a{
+a {
     text-decoration: none;
 }
 
-body p{
+p {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6em;
     text-justify: auto;
     
 }
+
+/* header styles*/
 
 body header{
     overflow: hidden;
@@ -24,12 +28,13 @@ body header{
     border-width: 100%;
 }
 
+/* styles for lists and links */
 
-body ul{
+ul{
 
     text-align: center;
     list-style-type: none;
-    word-spacing: 18px;
+    word-spacing: 1em;
     
 }
 
@@ -37,69 +42,72 @@ body ul li{
     
     display: inline-block;
     
-    
-    
 }
 
 body ul li a{
     text-decoration: none;
-    font-size: 25px;
+    font-size: 2em;
     
 }
 
+/* main content styles */
 
-body main{
+main{
     position: relative;
     height: 100%;
-    margin: 50px 0px 10px 200px;
+    margin: 3em 0 3em 10em;
     width: 80%;
     border-width: thin;
     
 }
 
-body main article{
+main article{
     float: left;
-    width: 50%;
+    width: 100%;
     height: 50%;
-    margin-bottom: 95px;
+    margin-bottom: 10em;
     
 }
 
-body main article h1{
+main article h1{
     line-height: 10%;
     text-align: center;
     
 }
 
-body main article h3{
+main article h3{
     color: gray;
     font-weight: 100;
     line-height: 0%;
     font-style: italic;
     text-align: center;
-    padding-bottom: 30px;
+    padding-bottom: 4em;
 }
 
-body main article p{
-    padding-right: 20px;
-    margin-right: 40px;
-
-
+main article p{
+    padding-right: 1em;
+    margin-right: 1em;
 }
 
-body main article.dotted-border{
+main article.dotted-border{
     border-bottom: 1px dotted gray;
     width: 100%;
     padding-bottom: 50px;
 }
-
-
 
 #home-main-section{
     float: left;
     width: 50%;
 }
 
+#home-img-section{
+    float: right;
+    padding-top: 3em;
+    width: 40%;
+
+}
+
+/* portfolio styles */
 
 section.portfolio-description{
     padding-top: 1em;
@@ -112,27 +120,85 @@ section.portfolio-description{
 
 }
 
+/* resume styles */
 
-body footer{
+#cv-intro-section{
+      
+    width: 100%;
+    padding-top: 1.3em;
+      
+  }
+
+#cv-intro-first-div{
+    width: 40%;
+    float: left;
+      
+  }
+
+#cv-intro-second-div{
+    float: right;
+      
+      
+}
+
+#cv-section-h3{
+    line-height: 0.01em;
+    text-align: left;
+  }
+
+#cv-profiel{
+    clear: both;
+    width: 100%;
+    padding-top: 3em;
+    border-top: 0.1em solid gray;
+  }
+
+.cv-section-h2{
+    float: left;
+    width: 20%;
+
+  }
+
+.cv-section-p{
+    float: right;
+    width: 80%;
+
+  }
+
+#cv-opleiding{
+    clear: both;
+    padding-top: 3em;
+  }
+
+#cv-skills{
+    clear: both;
+    padding-top: 3em;
+  }
+
+.styled-unordered-lists {
+    display: flex;
+    word-spacing: 0.3em;
+    font-style: italic;
+      
+  }
+.styled-unordered-lists-skills{
+    display: flex;
+    word-spacing: 0.3em;
+      
+  }
+
+
+
+/* footer styles*/
+
+footer{
     border-top: 1px solid gray;
     position: fixed;
     width: 100%;
     height: 10%;
     background-color: papayawhip;
     bottom: 0px;
-    padding-bottom: 25px;
-}
-
-
-#foot img{
-    width: 30px;
-    height: 30px;
-}
-
-/* Paragraph formatting */
-
- #github{
-    text-align: center;
+    padding-bottom: 1em;
 }
 
 
@@ -142,74 +208,38 @@ body footer{
     text-align: center;
 }
 
-  
 
-
-  #cv-intro-section{
-      
-      width: 100%;
-      padding-top: 1.3em;
-      
-  }
-
-  #cv-intro-first-div{
-      width: 40%;
-      float: left;
-      
-  }
-
-  #cv-intro-second-div{
-      float: right;
-      
-      
+#foot img{
+    width: 2em;
+    height: 2em;
 }
 
-  #cv-section-h3{
-      line-height: 0.01em;
-      text-align: left;
-  }
+  /* Styles for smaller screen sizes */
 
-  #cv-profiel{
-      clear: both;
-      width: 100%;
-      padding-top: 3em;
-      border-top: 0.1em solid gray;
-  }
+  @media only screen and (max-width:600px){
 
-  .cv-section-h2{
-      float: left;
-      width: 20%;
+    
+#home-img-section{
+    display:none;
 
-  }
+    }
+    
+#home-main-section{
+    min-width: 110%;
+        
+    }
 
-  .cv-section-p{
-      float: right;
-      width: 80%;
+body header{
+    min-width: 125%;
+    }
 
-  }
-
-  #cv-opleiding{
-      clear: both;
-      
-      padding-top: 3em;
-  }
-
-  #cv-skills{
-      clear: both;
-      padding-top: 3em;
-  }
-
-  .styled-unordered-lists {
-      display: flex;
-      word-spacing: 0.3em;
-      font-style: italic;
-      
-  }
-  .styled-unordered-lists-skills{
-      display: flex;
-      word-spacing: 0.3em;
-      
-  }
+.cv-section-h2{
+    float: left;
+    width: 20%;
+    padding-right: 1em;
+  
+    }
+}
   
 
   
