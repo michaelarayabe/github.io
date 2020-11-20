@@ -12,6 +12,13 @@ a {
     text-decoration: none;
 }
 
+#nav-links a:hover{
+    background-color: blueviolet;
+    border-radius: 0.3em;
+    
+    
+}
+
 p {
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6em;
@@ -26,12 +33,13 @@ body header{
     width: 100%;
     border-bottom: 0.01em solid gray;
     border-width: 100%;
+    background-color: khaki;
 }
 
 /* styles for lists and links */
 
 ul{
-
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     list-style-type: none;
     word-spacing: 1em;
@@ -102,7 +110,7 @@ main article.dotted-border{
 
 #home-img-section{
     float: right;
-    padding-top: 3em;
+    padding-top: 10em;
     width: 40%;
 
 }
@@ -117,8 +125,11 @@ section.portfolio-description{
 #portfolio-main-image-one{
     float: left;
     margin-right: 1em;
+    margin-left: 7em;
 
 }
+
+
 
 /* resume styles */
 
@@ -165,6 +176,8 @@ section.portfolio-description{
 
   }
 
+
+
 #cv-opleiding{
     clear: both;
     padding-top: 3em;
@@ -178,16 +191,90 @@ section.portfolio-description{
 .styled-unordered-lists {
     display: flex;
     word-spacing: 0.3em;
-    font-style: italic;
+    
       
   }
-.styled-unordered-lists-skills{
+
+
+
+
+.styled-unordered-lists-skills-1{
+    float: left;
     display: flex;
     word-spacing: 0.3em;
-      
-  }
+    padding-top: 0.5em;
+    content: url('/img/intel.png');
+    width: 2.5em;
+    height: 2.5em;
+    
+}
 
+.styled-unordered-lists-skills-2{
+    float: left;
+    display: flex;
+    word-spacing: 0.3em;
+    padding-top: 0.5em;
+    content: url('/img/boot.png');
+    width: 2.5em;
+    height: 2.5em;
+}
 
+.styled-unordered-lists-skills-3{
+    
+    display: flex;
+    word-spacing: 0.3em;
+    padding-top: 0.5em;
+    content: url('/img/css.png');
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.styled-unordered-lists-skills-4{
+    float: left;
+    display: flex;
+    word-spacing: 0.3em;
+    padding-top: 0.5em;
+    content: url('/img/html.png');
+    width: 2.5em;
+    height: 2.5em;
+}
+
+.styled-unordered-lists-skills-5{
+    float: left;
+    display: flex;
+    word-spacing: 0.3em;
+    padding-top: 0.5em;
+    content: url('/img/github.png');
+    width: 2.5em;
+    height: 2.5em;
+}
+.styled-unordered-lists-skills-6{
+    
+    display: flex;
+    word-spacing: 0.3em;
+    padding-top: 0.5em;
+    content: url('/img/java.png');
+    width: 2.5em;
+    height: 2.5em;
+}
+.styled-unordered-lists-skills-7{
+    float: left;
+    display: flex;
+    word-spacing: 0.3em;
+    padding-top: 0.5em;
+    content: url('/img/sublime.png');
+    width: 2.5em;
+    height: 2.5em;
+}
+.styled-unordered-lists-skills-8{
+    
+    display: flex;
+    word-spacing: 0.3em;
+    padding-top: 0.5em;
+    content: url('/img/python.png');
+    width: 2.5em;
+    height: 2.5em;
+}
 
 /* footer styles*/
 
@@ -218,16 +305,17 @@ footer{
 
   @media only screen and (max-width:600px){
 
+#home-main-section{
+    min-width: 110%;
+            
+    }    
     
 #home-img-section{
+    
     display:none;
 
     }
     
-#home-main-section{
-    min-width: 110%;
-        
-    }
 
 body header{
     min-width: 125%;
